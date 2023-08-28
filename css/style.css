@@ -99,7 +99,8 @@ input {
   letter-spacing: 0.2px;
 }
 
-input:focus ~ .label {
+input:focus ~ .label ,
+input:valid ~ .label{
   top: -8px;
   background-color: white;
   padding: 3px;
@@ -111,15 +112,8 @@ input:focus ~ .label {
   letter-spacing: 0.2px;
 }
 
-/* input: + .label {
-  top: -8px;
-  color: #1a73e8;
-  background-color: white;
-  padding: 3px;
-  position:fixed;
-} */
 
-input:focus {
+input:focus , input:valid {
   border: 2px solid #1a73e8;
   outline-style: none !important;
   color: #000;
